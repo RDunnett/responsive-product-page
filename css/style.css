@@ -8,6 +8,8 @@
   --fs-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
   --blk: #000;
   --white:#fff; 
+  --grey:darkgray;
+
 }
 
 * {
@@ -26,7 +28,6 @@ html {
   color: var(--blk);
   scroll-behavior: smooth;
   line-height: 1.4;
-  font-size: var(--fs-base) ;
 }
 
 body {
@@ -36,11 +37,11 @@ body {
 .wrapper{
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2em;
 }
 
 #header{
   color: var(--blk);
+  padding-bottom: 5em;
 }
 
 #header > div{
@@ -66,34 +67,61 @@ a{
 img {
   display: block;
   max-width: 100%;
-  padding: 1em;
+  border-radius: 1em;
 }
 
 h1{
-  font-size: var(--fs-xxl);
+  font-size: var(--fs-xl);
 }
 
 h2{
-  font-size: var(--fs-xl);
+  font-size: var(--fs-lg);
 }
+
+#bite-me{
+  padding-bottom:4em;
+}
+#bite-me .wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1em;
+
+}
+
+.products{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+
+button{
+  color: var(--white);
+  background-color: var(--blk);
+  font-size: var(--fs-base);
+  text-decoration: none;
+  font-family:'Poppins', sans-serif;
+  border-radius: .25em;
+}
+
+button:hover{
+  background-color: var(--white);
+  color: var(--blk);
+}
+
 
 #wpas{
   background-color: var(--blk);
   color: var(--white);
   text-align: center;
   min-width: 100%;
+  padding: 2em 0 2em 0;
 }
 
 #wpas .wrapper .quotes{
   text-align: left;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-width: 1em;
-  padding: 2em;
-}
-
-blockquote{
-  display: block;
+  grid-template-columns: 1fr 1fr 1fr; 
 }
 
 cite{
@@ -102,5 +130,36 @@ cite{
   padding-top: 1em;
 }
 
+#btd{
+text-align: center;
+display: block;
+}
 
+#btd .wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr;
+text-align: left;
+padding: 2em 0 2em 0;
+gap: 2em;
+}
 
+#try-it{
+  text-align: center;
+}
+
+.try-it-pics{
+  display: flex;
+  gap:1em;
+}
+
+footer{
+  text-align: center;
+}
+
+h3 a:hover{
+  color:var(--grey) ;
+}
+
+@media(min-width:60em){
+  padding:0;
+}

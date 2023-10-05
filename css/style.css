@@ -93,6 +93,7 @@ gap: 1em;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1em;
+  max-width: 100%;
 }
 
 button{
@@ -160,6 +161,16 @@ h3 a:hover{
   color:var(--grey) ;
 }
 
-@media(min-width:60em){
-  padding:0;
+@media(max-width:60em){
+  html{
+    padding:0;
+  }
+
+
+}
+
+@media(max-width:48em){
+  #bite-me .wrapper{
+    display: block;
+  }
 }

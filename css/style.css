@@ -193,7 +193,7 @@ h3 a:hover{
 
 @media(min-width:48em){
   #bite-me .wrapper{
-    /* display: block; */
+    display: block;
     flex-direction: row;
   }
 }

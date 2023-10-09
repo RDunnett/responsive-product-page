@@ -117,6 +117,7 @@ button{
   text-decoration: none;
   font-family:'Poppins', sans-serif;
   border-radius: .25em;
+  transition: .25s ease;
 }
 
 
@@ -124,6 +125,7 @@ button{
 button:hover{
   background-color: var(--white);
   color: var(--blk);
+  transform: scale(1.1);
 }
 
 

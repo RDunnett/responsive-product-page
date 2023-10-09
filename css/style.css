@@ -14,12 +14,14 @@
 
 * {
   box-sizing: border-box;
+  transition: all .5s ease;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    transition: all .5s ease;
 }
 
 html {
@@ -37,6 +39,7 @@ body {
 .wrapper{
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1em;
 }
 
 #header{
@@ -98,9 +101,7 @@ p{
 transition: all ease-out .5s ;
 display: grid;
 grid-template-columns: 1fr 1fr;
-gap: 1em;
-transition: all 0.3s ease;
-
+gap: 1em; 
 }
 
 .products{
@@ -118,9 +119,7 @@ button{
   border-radius: .25em;
 }
 
-#bite-text{
-  
-}
+
 
 button:hover{
   background-color: var(--white);

@@ -95,11 +95,11 @@ p{
   padding-bottom:4em;
 }
 #bite-me .wrapper{
-
-display: flex;
-flex-direction: column;
+transition: all ease-out .5s ;
+display: grid;
+grid-template-columns: 1fr 1fr;
 gap: 1em;
-align-items: flex-start;
+transition: all 0.3s ease;
 
 }
 
@@ -179,21 +179,26 @@ h3 a:hover{
   color:var(--grey) ;
 }
 
-@media(min-width:38em){
-
+@media(max-width:60em){
+html{
+  padding: 0 1em;
+}
 }
 
-@media(min-width:60em){
-  html{
-    padding:0;
-  }
-
-
-}
-
-@media(min-width:48em){
+@media(max-width:48em){
   #bite-me .wrapper{
     display: block;
-    flex-direction: row;
+  }
+}
+
+@media(max-width:38em){
+  .products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+  }
+
+  .span-column{
+    grid-column: 1 / 4;
   }
 }
